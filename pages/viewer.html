@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Planet Viewer</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<h1 class="logo">Planetary Comparison Lab</h1>
+
+<nav>
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="tool.html">Interactive Tool</a></li>
+<li><a href="scenario.html">Scenario Tool</a></li>
+<li><a href="simulations.html">Simulations</a></li>
+<li><a href="conversion.html">Conversion Calculator</a></li>
+<li><a href="resources.html">Helpful Resources</a></li>
+<li><a href="merch.html">Merch</a></li>
+<li><a href="support.html">Support</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<h2 style="text-align:center">3D Planet Viewer</h2>
+
+<div style="text-align:center; margin-bottom:20px;">
+
+<!---Zoom In/Out-->
+<button id="zoomInBtn">+</button>
+<button id="zoomOutBtn">-</button>
+
+<!---Planet Select dropdown menu buttons-->
+<select id="planetSelect">
+
+<option value="mercury.jpg">Mercury</option>
+<option value="venus.jpg">Venus</option>
+<option value="earth.jpg">Earth</option>
+<option value="mars.jpg">Mars</option>
+<option value="jupiter.jpg">Jupiter</option>
+<option value="saturn.jpg">Saturn</option>
+<option value="uranus.jpg">Uranus</option>
+<option value="neptune.jpg">Neptune</option>
+
+<!---Planet View and Solar System View buttons-->
+</select>
+
+<button id="planetViewBtn">Planet View</button>
+<button id="systemViewBtn">Solar System View</button>
+
+<!---Simulation Speed dropdown menu buttons-->
+<label>Simulation Speed</label>
+
+<select id="timeSpeed">
+<option value="1">1x</option>
+<option value="5">5x</option>
+<option value="10">10x</option>
+<option value="100">100x</option>
+</select>
+
+<!---Realistic Size Mode button-->
+<label>
+<input type="checkbox" id="scaleToggle">
+Realistic Size Mode
+</label>
+
+</div>
+
+<div id="viewer"></div>
+
+</main>
+
+<!-- Three.js library -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+
+<script src="../js/planetViewer.js"></script>
+
+</body>
+</html>

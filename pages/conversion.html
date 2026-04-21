@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Conversion Calculator</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<h1 class="logo">Planetary Comparison Lab</h1>
+
+<nav>
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="tool.html">Interactive Tool</a></li>
+<li><a href="scenario.html">Scenario Tool</a></li>
+<li><a href="simulations.html">Simulations</a></li>
+<li><a href="conversion.html">Conversion Calculator</a></li>
+<li><a href="resources.html">Helpful Resources</a></li>
+<li><a href="merch.html">Merch</a></li>
+<li><a href="support.html">Support</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<h1 class="title">Conversion Calculator</h1>
+
+<div class="grid">
+
+<!-- LENGTH -->
+<div class="converter" data-type="length">
+<h2>Length / Distance</h2>
+
+<div class="unitRow">
+
+<div class="unitSelect">
+
+<input class="unitSearchFrom" placeholder="Search unit...">
+<button class="clearBtn clearFrom">×</button>
+
+<div class="dropdownList unitFrom"></div>
+
+</div>
+
+<div class="unitSelect">
+
+<input class="unitSearchTo" placeholder="Search unit...">
+<button class="clearBtn clearTo">×</button>
+
+<div class="dropdownList unitTo"></div>
+
+</div>
+
+</div>
+
+<div class="valueRow">
+<input class="inputValue" type="text" placeholder="Value">
+<input class="outputValue" type="text" readonly>
+</div>
+
+<button class="swapBtn">Swap</button>
+</div>
+
+<!-- AREA -->
+<div class="converter" data-type="area">
+<h2>Area</h2>
+
+<div class="unitRow">
+
+<div class="unitSelect">
+
+<input class="unitSearchFrom" placeholder="Search unit...">
+<button class="clearBtn clearFrom">×</button>
+
+<div class="dropdownList unitFrom"></div>
+
+</div>
+
+<div class="unitSelect">
+
+<input class="unitSearchTo" placeholder="Search unit...">
+<button class="clearBtn clearTo">×</button>
+
+<div class="dropdownList unitTo"></div>
+
+</div>
+
+</div>
+
+<div class="valueRow">
+<input class="inputValue" type="text" placeholder="Value">
+<input class="outputValue" type="text" readonly>
+</div>
+
+<button class="swapBtn">Swap</button>
+</div>
+
+<!-- VOLUME -->
+<div class="converter" data-type="volume">
+<h2>Volume</h2>
+
+<div class="unitRow">
+
+<div class="unitSelect">
+
+<input class="unitSearchFrom" placeholder="Search unit...">
+<button class="clearBtn clearFrom">×</button>
+
+<div class="dropdownList unitFrom"></div>
+
+</div>
+
+<div class="unitSelect">
+
+<input class="unitSearchTo" placeholder="Search unit...">
+<button class="clearBtn clearTo">×</button>
+
+<div class="dropdownList unitTo"></div>
+
+</div>
+
+</div>
+
+<div class="valueRow">
+<input class="inputValue" type="text" placeholder="Value">
+<input class="outputValue" type="text" readonly>
+</div>
+
+<button class="swapBtn">Swap</button>
+</div>
+
+<!-- MASS -->
+<div class="converter" data-type="mass">
+<h2>Mass</h2>
+
+<div class="unitRow">
+
+<div class="unitSelect">
+
+<input class="unitSearchFrom" placeholder="Search unit...">
+<button class="clearBtn clearFrom">×</button>
+
+<div class="dropdownList unitFrom"></div>
+
+</div>
+
+<div class="unitSelect">
+
+<input class="unitSearchTo" placeholder="Search unit...">
+<button class="clearBtn clearTo">×</button>
+
+<div class="dropdownList unitTo"></div>
+
+</div>
+
+</div>
+
+<div class="valueRow">
+<input class="inputValue" type="text" placeholder="Value">
+<input class="outputValue" type="text" readonly>
+</div>
+
+<button class="swapBtn">Swap</button>
+</div>
+
+<!-- TIME -->
+<div class="converter" data-type="time">
+<h2>Time</h2>
+
+<div class="unitRow">
+
+<div class="unitSelect">
+
+<input class="unitSearchFrom" placeholder="Search unit...">
+<button class="clearBtn clearFrom">×</button>
+
+<div class="dropdownList unitFrom"></div>
+
+</div>
+
+<div class="unitSelect">
+
+<input class="unitSearchTo" placeholder="Search unit...">
+<button class="clearBtn clearTo">×</button>
+
+<div class="dropdownList unitTo"></div>
+
+</div>
+
+</div>
+
+<div class="valueRow">
+<input class="inputValue" type="text" placeholder="Value">
+<input class="outputValue" type="text" readonly>
+</div>
+
+<button class="swapBtn">Swap</button>
+</div>
+
+<!-- SPEED -->
+<div class="converter" data-type="speed">
+<h2>Speed</h2>
+
+<div class="unitRow">
+
+<div class="unitSelect">
+
+<input class="unitSearchFrom" placeholder="Search unit...">
+<button class="clearBtn clearFrom">×</button>
+
+<div class="dropdownList unitFrom"></div>
+
+</div>
+
+<div class="unitSelect">
+
+<input class="unitSearchTo" placeholder="Search unit...">
+<button class="clearBtn clearTo">×</button>
+
+<div class="dropdownList unitTo"></div>
+
+</div>
+
+</div>
+
+<div class="valueRow">
+<input class="inputValue" type="text" placeholder="Value">
+<input class="outputValue" type="text" readonly>
+</div>
+
+<button class="swapBtn">Swap</button>
+</div>
+
+<!-- ENERGY -->
+<div class="converter" data-type="energy">
+<h2>Energy</h2>
+
+<div class="unitRow">
+
+<div class="unitSelect">
+
+<input class="unitSearchFrom" placeholder="Search unit...">
+<button class="clearBtn clearFrom">×</button>
+
+<div class="dropdownList unitFrom"></div>
+
+</div>
+
+<div class="unitSelect">
+
+<input class="unitSearchTo" placeholder="Search unit...">
+<button class="clearBtn clearTo">×</button>
+
+<div class="dropdownList unitTo"></div>
+
+</div>
+
+</div>
+
+<div class="valueRow">
+<input class="inputValue" type="text" placeholder="Value">
+<input class="outputValue" type="text" readonly>
+</div>
+
+<button class="swapBtn">Swap</button>
+</div>
+
+<!-- POWER -->
+<div class="converter" data-type="power">
+<h2>Power</h2>
+
+<div class="unitRow">
+
+<div class="unitSelect">
+
+<input class="unitSearchFrom" placeholder="Search unit...">
+<button class="clearBtn clearFrom">×</button>
+
+<div class="dropdownList unitFrom"></div>
+
+</div>
+
+<div class="unitSelect">
+
+<input class="unitSearchTo" placeholder="Search unit...">
+<button class="clearBtn clearTo">×</button>
+
+<div class="dropdownList unitTo"></div>
+
+</div>
+
+</div>
+
+<div class="valueRow">
+<input class="inputValue" type="text" placeholder="Value">
+<input class="outputValue" type="text" readonly>
+</div>
+
+<button class="swapBtn">Swap</button>
+</div>
+
+<!-- TEMPERATURE -->
+<div class="converter" data-type="temperature">
+<h2>Temperature</h2>
+
+<div class="unitRow">
+
+<div class="unitSelect">
+
+<input class="unitSearchFrom" placeholder="Search unit...">
+<button class="clearBtn clearFrom">×</button>
+
+<div class="dropdownList unitFrom"></div>
+
+</div>
+
+<div class="unitSelect">
+
+<input class="unitSearchTo" placeholder="Search unit...">
+<button class="clearBtn clearTo">×</button>
+
+<div class="dropdownList unitTo"></div>
+
+</div>
+
+</div>
+
+<div class="valueRow">
+<input class="inputValue" type="text" placeholder="Value">
+<input class="outputValue" type="text" readonly>
+</div>
+
+<button class="swapBtn">Swap</button>
+</div>
+
+</main>
+
+<script src="../js/conversion.js"></script>
+
+</body>
+</html>

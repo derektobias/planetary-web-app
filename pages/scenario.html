@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Compare Real Scenarios</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+<h1 class="logo">Scenario Comparison</h1>
+
+<nav>
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="tool.html">Interactive Tool</a></li>
+<li><a href="scenario.html">Scenario Tool</a></li>
+<li><a href="simulations.html">Simulations</a></li>
+<li><a href="conversion.html">Conversion Calculator</a></li>
+<li><a href="resources.html">Helpful Resources</a></li>
+<li><a href="merch.html">Merch</a></li>
+<li><a href="support.html">Support</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<h2 class="section-title">Compare What Would Happen to You</h2>
+
+<!-- INPUT SECTION -->
+<div style="text-align:center; margin:20px;">
+
+    <div>
+        <label>Enter your weight (<span id="unit-weight">lbs</span>):</label>
+        <input type="number" id="userWeight" value="150">
+    </div>
+
+    <div>
+        <label>Enter your jump height (<span id="unit-height">ft</span>):</label>
+        <input type="number" id="userJump" value="2">
+    </div>
+
+    <div>
+        <label>Enter your throw range (<span id="unit-distance">ft</span>):</label>
+        <input type="number" id="userThrow" value="30">
+    </div>
+
+    <div>
+        <label>Enter your running speed (<span id="unit-speed">mph</span>):</label>
+        <input type="number" id="userSpeed" value="6">
+    </div>
+
+</div>
+
+<div style="text-align:center; margin-bottom:15px;">
+    <button onclick="toggleUnits()" class="button">Switch to Metric</button>
+</div>
+
+<!-- SCENARIO BUTTONS -->
+<div style="text-align:center; margin-bottom:20px;">
+    <button id="btn-weight" onclick="setScenario('weight')" class="button active-btn">Weight Comparison</button>
+    <button id="btn-jump" onclick="setScenario('jump')" class="button">Jump Height</button>
+    <button id="btn-throw" onclick="setScenario('throw')" class="button">Throw Distance</button>
+    <button id="btn-run" onclick="setScenario('run')" class="button">Running Speed</button>
+</div>
+
+<!-- DISCLAIMER -->
+ <p id="scenario-disclaimer" style="text-align:center; font-size:14px; color:#aaa; margin-top:10px;">
+Based on surface gravity and assuming Earth-like conditions.
+</p>
+
+<!-- MIDDLE SECTION ARCHITECTURE -->
+<div class="middle-section">
+    <div class="left-panel">
+
+        <h3>Select Planetary Body</h3>
+
+        <!-- Search -->
+        <input type="text" id="planet-search" placeholder="Search planetary bodies...">
+
+        <!-- Filter -->
+        <select id="class-filter">
+            <option value="all">All</option>
+            <option value="planet">Planets</option>
+            <option value="moon">Moons</option>
+            <option value="dwarf">Dwarf Planets</option>
+            <option value="asteroid">Asteroids</option>
+        </select>
+
+        <!-- Grid -->
+        <div id="planet-selector"></div>
+
+    </div>
+
+    <div class="right-panel">
+        <h3 id="visual-title">Select a planet</h3>
+        <div id="visual-animation"></div>
+    </div>
+
+</div>
+
+<!-- OUTPUT -->
+<div id="results" class="scenario-grid"></div>
+
+</main>
+
+<script src="../js/scenario.js"></script>
+
+</body>
+</html>

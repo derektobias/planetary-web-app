@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Planetary Comparison Tool</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<h1 class="logo">Planetary Comparison Lab</h1>
+
+<nav>
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="tool.html">Interactive Tool</a></li>
+<li><a href="scenario.html">Scenario Tool</a></li>
+<li><a href="simulations.html">Simulations</a></li>
+<li><a href="conversion.html">Conversion Calculator</a></li>
+<li><a href="resources.html">Helpful Resources</a></li>
+<li><a href="merch.html">Merch</a></li>
+<li><a href="support.html">Support</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main class="tool-layout">
+
+<div id="sidebar">
+
+<!---Collapse Controls button-->
+<h2>Controls</h2>
+
+<button id="toggle-sidebar">Collapse</button>
+
+<!---Select Planetary Bodies lookup finder-->
+<h3>Select Planetary Bodies</h3>
+
+<input type="text" id="planet-search" placeholder="Search planetary bodies...">
+
+<!---Filter by Class dropdown menu buttons-->
+<h3>Filter by Class</h3>
+
+<!---Planetar Body selection by picture-->
+<select id="class-filter">
+
+<option value="all">All</option>
+<option value="planet">Planets</option>
+<option value="moon">Moons</option>
+<option value="dwarf">Dwarf Planets</option>
+<option value="asteroid">Asteroids</option>
+
+<!---Select Data Properties label-->
+</select>
+
+<div id="planet-grid"></div>
+
+<h3>Select Data Properties</h3>
+
+<div id="property-controls">
+
+<!-- BASIC -->
+<div class="property-group">
+<h4>Basic</h4>
+<div class="group-grid">
+
+<label><input type="checkbox" value="class" checked> Class</label>
+<label><input type="checkbox" value="parent"> Parent</label>
+<label><input type="checkbox" value="moons"> Moons</label>
+
+</div>
+</div>
+
+<!-- PHYSICAL -->
+<div class="property-group">
+<h4>Physical</h4>
+<div class="group-grid">
+
+<label><input type="checkbox" value="mass_kg"> Mass (kg)</label>
+<label><input type="checkbox" value="mean_radius_km" checked> Mean Radius (km)</label>
+<label><input type="checkbox" value="volume_km3"> Volume (km³)</label>
+<label><input type="checkbox" value="density_kg_m3" checked> Density (kg/m³)</label>
+<label><input type="checkbox" value="gravity_m_s2" checked> Gravity (m/s²)</label>
+<label><input type="checkbox" value="escape_velocity_km_s"> Escape Velocity (km/s)</label>
+<label><input type="checkbox" value="oblateness"> Oblateness</label>
+
+</div>
+</div>
+
+<!-- ORBITAL -->
+<div class="property-group">
+<h4>Orbital</h4>
+<div class="group-grid">
+
+<label><input type="checkbox" value="perihelion"> Perihelion / Perigee (AU/km)</label>
+<label><input type="checkbox" value="aphelion"> Aphelion / Apogee (AU/km)</label>
+<label><input type="checkbox" value="orbital_period_days" checked> Orbital Period (days)</label>
+<label><input type="checkbox" value="rotation_period_hours"> Rotation Period (hours)</label>
+<label><input type="checkbox" value="rotation_speed_kmh"> Rotation Speed (km/hr)</label>
+<label><input type="checkbox" value="semi_major_axis"> Semi-Major Axis (AU/km)</label>
+<label><input type="checkbox" value="eccentricity"> Eccentricity</label>
+<label><input type="checkbox" value="axial_tilt_deg"> Axial Tilt (°)</label>
+<label><input type="checkbox" value="orbital_inclination_deg"> Orbital Inclination (°)</label>
+
+</div>
+</div>
+
+<!-- ENVIRONMENTAL -->
+<div class="property-group">
+<h4>Environmental</h4>
+<div class="group-grid">
+
+<label><input type="checkbox" value="avg_temp_c" checked> Avg Surface Temp (°C)</label>
+<label><input type="checkbox" value="temp_range_c"> Surface Temp Range (°C)</label>
+<label><input type="checkbox" value="magnetism_gauss"> Magnetism (Gauss)</label>
+<label><input type="checkbox" value="atmospheric_density_kg_m3"> Atmospheric Density (kg/m³)</label>
+<label><input type="checkbox" value="atmospheric_pressure_bar"> Atmospheric Pressure (bar)</label>
+<label><input type="checkbox" value="atmospheric_composition"> Atmospheric Composition</label>
+<label><input type="checkbox" value="scale_height_km"> Scale Height (km)</label>
+
+</div>
+</div>
+
+<!-- SURFACE -->
+<div class="property-group">
+<h4>Surface</h4>
+<div class="group-grid">
+
+<label><input type="checkbox" value="surface_composition"> Surface Composition</label>
+<label><input type="checkbox" value="albedo"> Albedo</label>
+
+</div>
+</div>
+
+</div>
+
+</div> <!-- END property-controls -->
+
+</div> <!-- ✅ END sidebar -->
+
+<div id="display-area">
+
+<h2>Planet Comparison</h2>
+
+<div id="comparison-container"></div>
+
+<h2>Planet Size Comparison</h2>
+
+<div id="scale-container"></div>
+
+</div>
+
+</main>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
